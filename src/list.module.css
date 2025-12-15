@@ -1,0 +1,176 @@
+.container {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.heading { 
+  margin-bottom: 15px;
+}
+
+.addButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.addButton:hover {
+  background-color: #45a049;
+}
+
+.dataall{
+  border: 1px dashed rgba(var(--light), .8) !important;
+    border-radius: 5px;
+    padding: 20px;
+}
+.dataTable { 
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 0; 
+  font-family: var(--font-Montserrat);
+}
+
+.dataTable th, 
+.dataTable td {
+  border: none;
+  color: rgba(var(--dark), 1);
+  padding: .8rem;
+  font-weight: 500;
+  font-size: 16px;
+  white-space: pre;
+}
+
+.dataTable th {
+  border: none !important;
+  color: rgba(var(--dark), 1);
+  font-weight: 700;
+  padding: 1rem;
+  text-transform: capitalize;
+  font-size: 17px;
+}
+
+.dataTable tbody tr:nth-child(odd) {
+  background-color: rgba(var(--light),.2);
+}
+
+.dataTable tbody tr:nth-child(even) {
+  background-color: #ffffff00; 
+}
+
+.deleteButton {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  background-color: #d32f2f;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 500px;
+}
+
+.modalHeading { 
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: var(--bg);
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--bg);
+}
+
+.formGroup input[type="text"], 
+.formGroup input[type="email"],
+.formGroup input[type="date"],
+.formGroup select {
+  width: calc(100% - 12px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.submitButton,
+.cancelButton {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.submitButton {
+  background-color: #007bff;
+  color: white;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}
+
+.cancelButton {
+  background-color: #6c757d;
+  color: white;
+}
+
+.cancelButton:hover {
+  background-color: #545b62;
+}
+
+.pagination {
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: rgba(var(--primary), 1) !important;
+  background: rgba(var(--primary), 1);
+  color: rgba(var(--white), 1) !important;
+  border: 1px dashed rgba(var(--dark), .2);
+}
+
+.pagination button:hover {
+  background-color: #eee;
+}
